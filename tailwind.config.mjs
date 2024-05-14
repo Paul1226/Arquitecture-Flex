@@ -6,6 +6,11 @@ export default {
 			fontFamily:{
 				'poppins': ['Poppins', 'sans-serif'],
 				'playfair': ['Playfair Display Variable', 'serif'],
+			},
+			colors:{
+				textColor:'#424241',
+				bgColor:'#DEDAD5',
+				bgBody:'#FAF8F5',
 			}
 		},
 	},
