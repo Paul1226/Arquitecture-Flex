@@ -1,0 +1,42 @@
+---
+
+---
+
+<header class="w-11/12 mx-auto">
+    <div class="w-full max-w-[781px] flex flex-col gap-y-2 py-4 md:flex-row md:justify-between md:items-center">
+        <span class="text-center">
+            <a class="w-max font-semibold text-2xl" href="/"
+                >ArchiFlex</a
+            >
+        </span>
+        <nav>
+            <ul class="flex justify-between text-xs md:justify-end md:gap-x-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Room Tour</a></li>
+                <li><a href="#">New Dev</a></li>
+                <li><a href="#">Galleries</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    nav{
+        ul{
+            li{
+                a{
+                    @apply opacity-65 transition-colors duration-300;
+                    &.active{
+                        @apply opacity-100;
+                    }
+                }
+            }
+        }
+    }
+</style>
+
+<script>
+    const $links = document.querySelectorAll('nav ul li a');
+    $links[0].classList.add('active');
+</script>

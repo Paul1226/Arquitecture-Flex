@@ -24,7 +24,11 @@ import '@fontsource-variable/playfair-display';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="font-poppins bg-bgBody w-[360px] mx-auto">
+	<body class="font-poppins text-textColor bg-bgBody w-full max-w-[1366px] mx-auto relative">
+		<div class="grid grid-cols-2 fixed inset-0 z-[-1] w-full h-screen">
+			<div class=""></div>
+			<div class="bg-bgColor"></div>
+		</div>
 		<slot />
 	</body>
 </html>
