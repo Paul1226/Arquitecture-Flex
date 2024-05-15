@@ -1,4 +1,4 @@
-<section class="grid grid-cols-1 gap-4 md:grid-cols-2 w-full">
+<section class="w-full grid grid-cols-1 gap-y-4 md:grid-cols-2">
     <img src="/public/image01.png" alt="hero image 1">
     <img src="/public/image02.png" alt="hero image 2">
 </section>
@@ -6,13 +6,11 @@
 <style>
     section{
         img{
-            @apply rounded-lg w-full;
+            @apply rounded-lg w-full [transition:max-width_500ms_ease-in-out] max-w-[375px] md:max-w-[210px] lg:max-w-[280px] xl:max-w-[320px] [box-shadow:10px_10px_10px_#00000030];
         }
-        img:first-child{
-            box-shadow: 10px 10px 10px #00000020;
-        }
+        
         img:last-child{
-            box-shadow: -10px 10px 10px #00000020;
+            @apply justify-self-center;
         }
     }
 </style>
