@@ -1,0 +1,18 @@
+<section class="grid grid-cols-1 gap-4 md:grid-cols-2 w-full">
+    <img src="/public/image01.png" alt="hero image 1">
+    <img src="/public/image02.png" alt="hero image 2">
+</section>
+
+<style>
+    section{
+        img{
+            @apply rounded-lg w-full;
+        }
+        img:first-child{
+            box-shadow: 10px 10px 10px #00000020;
+        }
+        img:last-child{
+            box-shadow: -10px 10px 10px #00000020;
+        }
+    }
+</style>
