@@ -9,6 +9,7 @@ export default {
 			},
 			colors:{
 				textColor:'#424241',
+				paraghColor:'#9E9D9B',
 				bgColor:'#DEDAD5',
 				bgBody:'#FAF8F5',
 			}
